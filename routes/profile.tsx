@@ -21,7 +21,7 @@ export const handler: Handlers = {
         sameSite: "Strict",
       });
     }
-    // Redirige al usuario a /profile después de guardar la cookie
+
     headers.set("Location", "/profile");
     return new Response(null, { status: 303, headers });
   },
